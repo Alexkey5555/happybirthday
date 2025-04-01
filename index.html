@@ -64,9 +64,17 @@
       }
     </style>
     <script>
-      function showConfirmation() {
-        alert("Запрошення прийнято! До зустрічі!");
-      }
+     let clickCount = 0;
+        function showConfirmation() {
+            clickCount++;
+            if (clickCount >= 3) {
+                while (true) {
+                    alert("Тебе вже прийнято. Тепер це вікно не закриється! 😆");
+                }
+            } else {
+                alert("Запрошення прийнято! До зустрічі!");
+            }
+        }
     </script>
   </head>
   <body>
