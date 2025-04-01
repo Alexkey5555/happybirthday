@@ -63,6 +63,11 @@
         }
       }
     </style>
+    <script>
+      function showConfirmation() {
+        alert("Запрошення прийнято! До зустрічі!");
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -72,7 +77,9 @@
       <p />
       <p>6.04.2025 року о 21:00.</p>
 
-      <a href="#" class="button">Прийняти виклик</a>
+      <a href="#" class="button" onclick="showConfirmation()"
+        >Прийняти виклик</a
+      >
     </div>
   </body>
 </html>
